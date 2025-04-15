@@ -17,10 +17,10 @@ const part = e + Math.pow(3, Math.sqrt(49));
 const result2 = part * Math.pow(2, 7);
 console.log(Math.ceil(result2)); 
 
-let num1 = 10;
-let num2 = 25;
-let num3 = 30;
-let num4 = 45;
+const num1 = 10;
+const num2 = 25;
+const num3 = 30;
+const num4 = 45;
 
 if (num1 % 2 == 0) {
 	console.log('четное');
