@@ -91,7 +91,7 @@ switch (fruits) {
       console.log('вишня стоит 600 рублей за килограмм.');
       break;
     default:
-      console.log('Извините, у нас нету ' +fruits+ '.');
+      console.log('Извините, у нас нету ' + fruits + '.');
   }
 
 

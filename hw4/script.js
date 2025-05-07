@@ -11,12 +11,12 @@ while (i < 101) {
 
 let number = 100;
  
-Prime:
+isPrime:
 for (let i = 2; i <= number; i++) { 
  
   for (let j = 2; j < i; j++) { 
-    if (i % j == 0) continue Prime; 
+    if (i % j == 0) continue isPrime; 
   }
  
-  console.log( i ); 
+  console.log(i); 
 }
