@@ -8,7 +8,7 @@ if (number <0 ) {
     console.log ('ноль')
 }
 
-const weight = 57;
+const weight = 58;
 const height = 1.63;
 
 const a = Math.pow(height,2);
