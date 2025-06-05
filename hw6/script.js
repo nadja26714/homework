@@ -7,9 +7,9 @@ console.log (sum);
 
 const numbers2 = [1, 2, 2, 3, 4, 5, 5, 5, 6];
 
-const sum2 = new Set(numbers2);
+const unique = numbers2.filter((a, b) => numbers2.indexOf(a) === b);
 
-console.log(Array.from(sum2));
+console.log (unique);
 
 
 const numbers3 = [1, 2, 3];
@@ -19,11 +19,11 @@ const sum3 = numbers3.reduce((total, num) => total + num, 0);
 console.log (sum3);
 
 
-let numbers5 = [1, 2, 3, 4, 5];
+const numbers4 = [1, 2, 3, 4, 5];
 
-numbers5.sort((a, b) => b - a);
+const reversed = numbers4.reduce((a, b) => [b, ...a], []);
 
-console.log (numbers5)
+console.log(reversed);
 
 
 let age = 2;
