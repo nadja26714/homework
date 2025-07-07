@@ -14,9 +14,9 @@ console.log(findShortestWord("Я люблю программировать"));
 
 function createPhoneNumber(number) {
   const s = number.toString();
-  return `8 (${s.slice(0,3)}) ${s.slice(3,6)}-${s.slice(6,9)}`;
+  return `8 (${s.slice(0,3)}) ${s.slice(3,6)}-${s.slice(6,10)}`;
 }
-console.log(createPhoneNumber(123456789)); 
+console.log(createPhoneNumber(1234567890)); 
 
 
 function findMinAndMax(arr) {
