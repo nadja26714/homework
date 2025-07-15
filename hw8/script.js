@@ -3,20 +3,20 @@ function isPalindrome(str) {
   return str === reversed;
 }
 console.log(isPalindrome("шалаш"))
-console.log(isPalindrome("привет"));   
+console.log(isPalindrome("привет"));
 
 
 function findShortestWord(sentence) {
   return sentence.split(' ').sort((a, b) => a.length - b.length)[0];
 }
-console.log(findShortestWord("Я люблю программировать")); 
+console.log(findShortestWord("Я люблю программировать"));
 
 
 function createPhoneNumber(number) {
   const s = number.toString();
-  return `8 (${s.slice(0,3)}) ${s.slice(3,6)}-${s.slice(6,10)}`;
+  return `8 (${s.slice(0, 3)}) ${s.slice(3, 6)}-${s.slice(6, 10)}`;
 }
-console.log(createPhoneNumber(1234567890)); 
+console.log(createPhoneNumber(1234567890));
 
 
 function findMinAndMax(arr) {
