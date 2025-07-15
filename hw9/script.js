@@ -54,9 +54,9 @@ function calculateTotal(items) {
 
 let items = ['apple', 'banana', 'orange'];
 
-let price = [apple: 1, banana: 2, orange: 3];
+const price = {apple: 1, banana: 2, orange: 3};
 
-const total = price('apple') + price('banana') + price('orange');
+const total = price['apple'] + price['banana'] + price['orange'];
 
 function calculateTotal(items) {
   return items.reduce(function (total, item) { return total + item.price; }, 0);
