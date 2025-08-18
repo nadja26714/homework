@@ -10,8 +10,8 @@ console.log('Total for Product 2:', total2);
 
 //мой вариант
 
-const product01 = { name: 'Product 1', price: 10 };
-const product02 = { name: 'Product 2', price: 20 };
+const product1 = { name: 'Product 1', price: 10 };
+const product2 = { name: 'Product 2', price: 20 };
 
 function printTotal(product) {
   const total = product.price * 1.2;
