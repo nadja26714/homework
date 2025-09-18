@@ -29,19 +29,25 @@ function outer() {
 outer();
 
 
-function fibonacci(n) {
-  const fib = [0, 1]; 
+function createFibonacciCalculator() {
+  const cache = [0, 1]; 
 
-  if (n < 2) {
-    return fib[n];
+  return function fib(n) {
+    if (cache[n] !== undefined) {
+      return cache[n];
+    }
+
+    for (let i = cache.length; i <= n; i++) {
+      cache[i] = cache[i - 1] + cache[i - 2];
+    }
+
+    return cache[n];
   }
-
-  for (let i = 2; i <= n; i++) {
-    fib.push(fib[i - 1] + fib[i - 2]); 
-  }
-
-  return fib[n];
 }
+const fibonacci = createFibonacciCalculator();
 
-console.log(fibonacci(7));  
+console.log(fibonacci(0));  
+console.log(fibonacci(1)); 
+console.log(fibonacci(5)); 
 console.log(fibonacci(10)); 
+console.log(fibonacci(50)); 
