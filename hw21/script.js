@@ -6,25 +6,27 @@ function safeDivide(a, b) {
     return a / b;
   } catch (error) {
     console.error(error.message);
+    return null; 
   }
 }
 
 console.log(safeDivide(10, 2)); 
 console.log(safeDivide(10, 0)); 
-
+  
 
 
 function transformJSON(str) {
   try {
     return JSON.parse(str);
-  } catch {
-    console.log("Ошибка: неправильный формат JSON");
+  } catch (error) {
+    console.log("Ошибка-неправильный формат JSON");
+    console.log("Подробности ошибки:", error.message);
     return null;
   }
 }
 
-console.log(transformJSON('{"name":"Анна"}')); 
-console.log(transformJSON('невалидный JSON'))
+console.log(transformJSON('{"name":"Анна"}'));      
+console.log(transformJSON('невалидный JSON'));  
 
 
 
