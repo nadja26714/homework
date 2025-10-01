@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Улучшенная текстовая RPG игра</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Orbitron:wght@400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="block">
+    <h1 class="title">Rpg игра</h1>
+    <div class="container">
+      <section id="character-stats">
+        <h2>Статистика персонажа</h2>
+        <div id="healthContainer">
+          <div class="stats">Здоровье:</div>
+          <div class="health-bar"><div id="playerHealth" class="health-fill"></div></div>
+        </div>
+        <div class="stats">Уровень: <span id="playerLevel"></span></div>
+        <div class="stats">Опыт: <span id="playerXP"></span></div>
+        <div class="stats">Сила: <span id="playerStrength"></span></div>
+        <div class="stats">Защита: <span id="playerDefense"></span></div>
+        <div class="stats">Инвентарь: <span id="playerInventory"></span></div>
+      </section>
+      <section id="actions">
+        <h2>Действия</h2>
+        <button id="attackBtn">Атака</button>
+        <button id="moveBtn">Переместиться</button>
+        <button id="useItemBtn">Использовать предмет</button>
+        <button id="escapeBtn">Побег</button>
+      </section>
+    </div>
+    <div class="container">
+        <section id="location-area">
+          <h2>Локация</h2>
+          <div id="location"></div>
+        </section>
+        <section id="enemy-area" style="display: none;">
+          <h2 id="enemy-name">Враг</h2>
+          <img id="enemy-image" src="" alt="Враг"/>
+          <div>Здоровье врага:</div>
+          <div class="health-bar"><div id="enemyHealth" class="health-fill"></div></div>
+        </section>
+    </div>
+      <section id="journal-section">
+        <h2 class="journal-title">Журнал событий</h2>
+        <div id="journal"></div>
+      </section>
+      <section class="reset">
+        <button id="resetBtn">Сброс игры</button>
+      </section>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
