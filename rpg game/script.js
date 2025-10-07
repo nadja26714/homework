@@ -32,7 +32,6 @@ levelUp() {
   this.strength += 3;
   this.defense += 1;
   this.experience = 0;
-  this.inventory = ['Меч','Лук']
   logEvent(`!${this.name} поднял уровень! Теперь ${this.level}`);
   updateStatsUI();
   },
