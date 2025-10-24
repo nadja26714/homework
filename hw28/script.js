@@ -5,13 +5,11 @@ function add(a, b) {
   return sum;
 }
 
-"use strict";
 
 function sum(a, b) {
   return a + b;
 }
 
-"use strict";
 
 function showThis() {
   console.log(this);
@@ -19,7 +17,9 @@ function showThis() {
 
 showThis(); 
 
-"use strict";
 
 const obj = {};
 delete obj.toString;
+
+//delete удаляет только свойства, созданные в объекте.
+//метод toString — внутри прототипа, и его нельзя удалить так.
